@@ -1,0 +1,81 @@
+:root {
+    --color_primario: #7ab6be;
+    --color_fondo: #31312d;
+    --color_fondo_imagen: 46,50,94;
+    --color_texto: #f8fafc;
+
+    --color_p1: #ff2418;
+    --color_p2: #FF803B;
+    --color_p3: #FAA639;
+    --color_p4: #4adf45;
+    --color_p5: #6143f8;
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    color: var(--color_primario);
+    line-height: 1.5;
+}
+
+a {
+    color: var(--color_primario);
+    font-weight: 400;
+}
+
+/*index*/
+.opciones{
+    font-size: 0;
+}
+
+.op{
+    width: 31%;
+    margin: 10%;
+    font-size: 1rem;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*b4kai*/
+/*.fondo_b4nkai{
+    background-image: linear-gradient(rgba(var(--color_fondo_imagen),0.95), rgba(var(--color_fondo_imagen),0.95)), url('img/ShinjiHirako.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}*/
+
+/*vulnerabilidades*/
+.card_vulnerabilidad{
+    margin: 7%;
+}
+
+.p1{
+    color: var(--color_p1);
+}
+
+.p2{
+    color: var(--color_p2);
+}
+
+.p3{
+    color: var(--color_p3);
+}
+
+.p4{
+    color: var(--color_p4);
+}
+
+.p5{
+    color: var(--color_p5);
+}
+

@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vulnerabilidades</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="buscador">
+            <input type="text" id="buscador">
+        </div>
+        <a href="index.html">Página principal</a>
+    </header>
+    <main>
+        <section class="grid_vulnerabilidades">
+            <article class="card_vulnerabilidad">
+                <div class="card_header">
+                    <h3>SQL Injection</h3>
+                    <span class="badge_severidad p2">P2</span>
+                    <span class="badge_severidad p1">P1</span>
+                </div>
+                <p class="card_categoria">Categoría: Lado del Servidor / Base de Datos</p>
+                <p class="card_desc">Permite alterar y manipular las consultas que una aplicación envía a su base de datos</p>
+                <p class="card_contador">Explotadas en entornos reales: 0 🎯</p>
+                <a href="apuntes/sqli.html" class="btn_leer">Ver apuntes</a>
+            </article>
+
+           <article class="card_vulnerabilidad">
+                <div class="card_header">
+                    <h3>Cross-site scripting (XSS)</h3>
+                    <div style="display: inline-flex; gap: 8px;">
+                        <span class="badge_severidad p4">P4</span>
+                        <span class="badge_severidad p3">P3</span>
+                        <span class="badge_severidad p2">P2</span>
+                    </div>
+                </div>
+                <p class="card_categoria">Categoría: Lado del Cliente</p>
+                <p class="card_desc">Permite inyectar scripts maliciosos</p>
+                <p class="card_contador">Explotadas en entornos reales: 0 🎯</p>
+                <a href="apuntes/xxs.html" class="btn_leer">Ver apuntes</a>
+            </article>
+
+            <article class="card_vulnerabilidad">
+                <div class="card_header">
+                    <h3>Cross-site request forgery (CSRF)</h3>
+                    <div style="display: inline-flex; gap: 8px;">
+                        <span class="badge_severidad p4">P4</span>
+                        <span class="badge_severidad p3">P3</span>
+                        <span class="badge_severidad p2">P2</span>
+                    </div>
+                </div>
+                <p class="card_categoria">Categoría: Lado del Cliente</p>
+                <p class="card_desc">Permite engañar al navegador de un usuario para que ejecute una acción en una aplicación web en la que confía </p>
+                <p class="card_contador">Explotadas en entornos reales: 0 🎯</p>
+                <a href="apuntes/csrf.html" class="btn_leer">Ver apuntes</a>
+            </article>
+
+            <article class="card_vulnerabilidad">
+                <div class="card_header">
+                    <h3>Clickjacking</h3>
+                    <div style="display: inline-flex; gap: 8px;">
+                        <span class="badge_severidad p5">P5</span>
+                        <span class="badge_severidad p4">P4</span>
+                        <span class="badge_severidad p3">P3</span>
+                    </div>
+                </div>
+                <p class="card_categoria">Categoría: Lado del Cliente</p>
+                <p class="card_desc">Consiste en engañar a un usuario para que haga clic en un elemento en una página web, creyendo que está clicando en otro</p>
+                <p class="card_contador">Explotadas en entornos reales: 0 🎯</p>
+                <a href="apuntes/clickjacking.html" class="btn_leer">Ver apuntes</a>
+            </article>
+
+            <article class="card_vulnerabilidad">
+                <div class="card_header">
+                    <h3>DOM-based Vulnerabilities</h3>
+                    <div style="display: inline-flex; gap: 8px;">
+                        <span class="badge_severidad p4">P4</span>
+                        <span class="badge_severidad p3">P3</span>
+                        <span class="badge_severidad p2">P2</span>
+                    </div>
+                </div>
+                <p class="card_categoria">Categoría: Lado del Cliente</p>
+                <p class="card_desc">Ocurre cuando el código JavaScript del lado del cliente procesa datos que un atacante puede controlar</p>
+                <p class="card_contador">Explotadas en entornos reales: 0 🎯</p>
+                <a href="apuntes/dom-based.html" class="btn_leer">Ver apuntes</a>
+            </article>
+
+            <article class="card_vulnerabilidad">
+                <div class="card_header">
+                    <h3>Cross-origin resource sharing (CORS)</h3>
+                    <div style="display: inline-flex; gap: 8px;">
+                        <span class="badge_severidad p5">P5</span>
+                        <span class="badge_severidad p4">P4</span>
+                        <span class="badge_severidad p3">P3</span>
+                        <span class="badge_severidad p2">P2</span>
+                    </div>
+                </div>
+                <p class="card_categoria">Categoría: Lado del Servidor</p>
+                <p class="card_desc">Fallo en las cabeceras HTTP que permite a un dominio atacante eludir la Política del Mismo Origen (SOP) y leer datos sensibles del usuario autenticado</p>
+                <p class="card_contador">Explotadas en entornos reales: 0 🎯</p>
+                <a href="apuntes/cors.html" class="btn_leer">Ver apuntes</a>
+            </article>
+
+            <article class="card_vulnerabilidad">
+                <div class="card_header">
+                    <h3>XML external entity (XXE) injection</h3>
+                    <div style="display: inline-flex; gap: 8px;">
+                        <span class="badge_severidad p4">P4</span>
+                        <span class="badge_severidad p3">P3</span>
+                        <span class="badge_severidad p2">P2</span>
+                        <span class="badge_severidad p1">P1</span>
+                    </div>
+                </div>
+                <p class="card_categoria">Categoría: Lado del Servidor</p>
+                <p class="card_desc">Abuso del procesador de XML para obligar al servidor a leer archivos internos del sistema o realizar peticiones a otros servidores</p>
+                <p class="card_contador">Explotadas en entornos reales: 0 🎯</p>
+                <a href="apuntes/xxe.html" class="btn_leer">Ver apuntes</a>
+            </article>
+
+            <article class="card_vulnerabilidad">
+                <div class="card_header">
+                    <h3>Server-side request forgery (SSRF)</h3>
+                    <div style="display: inline-flex; gap: 8px;">
+                        <span class="badge_severidad p4">P4</span>
+                        <span class="badge_severidad p3">P3</span>
+                        <span class="badge_severidad p2">P2</span>
+                        <span class="badge_severidad p1">P1</span>
+                    </div>
+                </div>
+                <p class="card_categoria">Categoría: Lado del Servidor</p>
+                <p class="card_desc">Manipulación de una aplicación web para forzarla a realizar peticiones HTTP arbitrarias, permitiendo acceder a redes internas, metadatos en la nube o paneles de administración ocultos</p>
+                <p class="card_contador">Explotadas en entornos reales: 0 🎯</p>
+                <a href="apuntes/ssrf.html" class="btn_leer">Ver apuntes</a>
+            </article>
+
+            <article class="card_vulnerabilidad">
+                <div class="card_header">
+                    <h3>HTTP request smuggling</h3>
+                    <div style="display: inline-flex; gap: 8px;">
+                        <span class="badge_severidad p4">P4</span>
+                        <span class="badge_severidad p3">P3</span>
+                        <span class="badge_severidad p2">P2</span>
+                        <span class="badge_severidad p1">P1</span>
+                    </div>
+                </div>
+                <p class="card_categoria">Categoría: Lado del Servidor</p>
+                <p class="card_desc">Desincronización en el procesamiento de peticiones entre el front-end y el back-end, permitiendo interferir y capturar las peticiones de otros usuarios o evadir controles de seguridad</p>
+                <p class="card_contador">Explotadas en entornos reales: 0 🎯</p>
+                <a href="apuntes/request_smuggling.html" class="btn_leer">Ver apuntes</a>
+            </article>
+
+            <article class="card_vulnerabilidad">
+                <div class="card_header">
+                    <h3>OS command injection</h3>
+                    <div style="display: inline-flex; gap: 8px;">
+                        <span class="badge_severidad p1">P1</span>
+                    </div>
+                </div>
+                <p class="card_categoria">Categoría: Lado del Servidor</p>
+                <p class="card_desc">Ejecución de comandos arbitrarios en el sistema operativo del servidor mediante la manipulación de entradas de usuario no sanitizadas</p>
+                <p class="card_contador">Explotadas en entornos reales: 0 🎯</p>
+                <a href="apuntes/command_injection.html" class="btn_leer">Ver apuntes</a>
+            </article>
+
+            <article class="card_vulnerabilidad">
+                <div class="card_header">
+                    <h3>Server-Side Template Injection (SSTI)</h3>
+                    <div style="display: inline-flex; gap: 8px;">
+                        <span class="badge_severidad p4">P4</span>
+                        <span class="badge_severidad p3">P3</span>
+                        <span class="badge_severidad p2">P2</span>
+                        <span class="badge_severidad p1">P1</span>
+                    </div>
+                </div>
+                <p class="card_categoria">Categoría: Lado del Servidor</p>
+                <p class="card_desc">Inyección de directivas maliciosas en motores de plantillas web, permitiendo desde la filtración de datos internos hasta tomar el control total del servidor (RCE)</p>
+                <p class="card_contador">Explotadas en entornos reales: 0 🎯</p>
+                <a href="apuntes/ssti.html" class="btn_leer">Ver apuntes</a>
+            </article>
+
+            <article class="card_vulnerabilidad">
+                <div class="card_header">
+                    <h3>Path traversal</h3>
+                    <div style="display: inline-flex; gap: 8px;">
+                        <span class="badge_severidad p4">P4</span>
+                        <span class="badge_severidad p3">P3</span>
+                        <span class="badge_severidad p2">P2</span>
+                        <span class="badge_severidad p1">P1</span>
+                    </div>
+                </div>
+                <p class="card_categoria">Categoría: Lado del Servidor</p>
+                <p class="card_desc">Manipulación de las rutas que permite acceder a archivos con información sensible</p>
+                <p class="card_contador">Explotadas en entornos reales: 0 🎯</p>
+                <a href="apuntes/path.html" class="btn_leer">Ver apuntes</a>
+            </article>
+
+            <article class="card_vulnerabilidad">
+                <div class="card_header">
+                    <h3>Access control vulnerabilities</h3>
+                    <div style="display: inline-flex; gap: 8px;">
+                        <span class="badge_severidad p4">P4</span>
+                        <span class="badge_severidad p3">P3</span>
+                        <span class="badge_severidad p2">P2</span>
+                        <span class="badge_severidad p1">P1</span>
+                    </div>
+                </div>
+                <p class="card_categoria">Categoría: Lógica de Negocio / Servidor</p>
+                <p class="card_desc">Una aplicación web falla al aplicar restricciones sobre lo que los usuarios pueden ver o hacer</p>
+                <p class="card_contador">Explotadas en entornos reales: 0 🎯</p>
+                <a href="apuntes/access-control.html" class="btn_leer">Ver apuntes</a>
+            </article>
+
+            <article class="card_vulnerabilidad">
+                <div class="card_header">
+                    <h3>Authentication</h3>
+                    <div style="display: inline-flex; gap: 8px;">
+                        <span class="badge_severidad p4">P4</span>
+                        <span class="badge_severidad p3">P3</span>
+                        <span class="badge_severidad p2">P2</span>
+                        <span class="badge_severidad p1">P1</span>
+                    </div>
+                </div>
+                <p class="card_categoria">Categoría: Lógica de Negocio / Servidor</p>
+                <p class="card_desc">Fallos en los mecanismos de inicio de sesión, gestión de tokens o recuperación de contraseñas que permiten a un atacante evadir el login o suplantar la identidad de otros usuarios</p>
+                <p class="card_contador">Explotadas en entornos reales: 0 🎯</p>
+                <a href="apuntes/authentication.html" class="btn_leer">Ver apuntes</a>
+            </article>
+
+            <article class="card_vulnerabilidad">
+                <div class="card_header">
+                    <h3>Websocket Vulnerabilities</h3>
+                    <div style="display: inline-flex; gap: 8px;">
+                        <span class="badge_severidad p4">P4</span>
+                        <span class="badge_severidad p3">P3</span>
+                        <span class="badge_severidad p2">P2</span>
+                        <span class="badge_severidad p1">P1</span>
+                    </div>
+                </div>
+                <p class="card_categoria">Categoría: Comunicaciones Bidireccionales</p>
+                <p class="card_desc">Interceptación, manipulación o secuestro (CSWSH) de conexiones persistentes en tiempo real para inyectar payloads o robar flujo de datos</p>
+                <p class="card_contador">Explotadas en entornos reales: 0 🎯</p>
+                <a href="apuntes/websockets.html" class="btn_leer">Ver apuntes</a>
+            </article>
+
+            <article class="card_vulnerabilidad">
+                <div class="card_header">
+                    <h3>Web cache poisoning</h3>
+                    <div style="display: inline-flex; gap: 8px;">
+                        <span class="badge_severidad p4">P4</span>
+                        <span class="badge_severidad p3">P3</span>
+                        <span class="badge_severidad p2">P2</span>
+                        <span class="badge_severidad p1">P1</span>
+                    </div>
+                </div>
+                <p class="card_categoria">Categoría: Lado del Servidor / Infraestructura</p>
+                <p class="card_desc">Manipulación de las cabeceras HTTP no validadas (Unkeyed Inputs) para forzar al servidor a almacenar una respuesta maliciosa en la caché y distribuirla a otros visitantes</p>
+                <p class="card_contador">Explotadas en entornos reales: 0 🎯</p>
+                <a href="apuntes/web_cache_pois.html" class="btn_leer">Ver apuntes</a>
+            </article>
+
+            <article class="card_vulnerabilidad">
+                <div class="card_header">
+                    <h3>Insecure Deserialization</h3>
+                    <div style="display: inline-flex; gap: 8px;">
+                        <span class="badge_severidad p3">P3</span>
+                        <span class="badge_severidad p2">P2</span>
+                        <span class="badge_severidad p1">P1</span>
+                    </div>
+                </div>
+                <p class="card_categoria">Categoría: Lado del Servidor</p>
+                <p class="card_desc">Manipulación de objetos serializados suministrados por el usuario que, al ser reconstruidos por la aplicación web, permiten la ejecución de código arbitrario (RCE)</p>
+                <p class="card_contador">Explotadas en entornos reales: 0 🎯</p>
+                <a href="apuntes/deserialization.html" class="btn_leer">Ver apuntes</a>
+            </article>
+
+            <article class="card_vulnerabilidad">
+                <div class="card_header">
+                    <h3>Information disclosure</h3>
+                    <div style="display: inline-flex; gap: 8px;">
+                        <span class="badge_severidad p5">P5</span>
+                        <span class="badge_severidad p4">P4</span>
+                        <span class="badge_severidad p3">P3</span>
+                        <span class="badge_severidad p2">P2</span>
+                        <span class="badge_severidad p1">P1</span>
+                    </div>
+                </div>
+                <p class="card_categoria">Categoría: Configuración del Servidor</p>
+                <p class="card_desc">Ocurre cuando una página web expone información sensible de forma accidental</p>
+                <p class="card_contador">Explotadas en entornos reales: 0 🎯</p>
+                <a href="apuntes/informacion.html" class="btn_leer">Ver apuntes</a>
+            </article>
+
+            <article class="card_vulnerabilidad">
+                <div class="card_header">
+                    <h3>Business Logic Vulnerabilities</h3>
+                    <div style="display: inline-flex; gap: 8px;">
+                        <span class="badge_severidad p4">P4</span>
+                        <span class="badge_severidad p3">P3</span>
+                        <span class="badge_severidad p2">P2</span>
+                        <span class="badge_severidad p1">P1</span>
+                    </div>
+                </div>
+                <p class="card_categoria">Categoría: Lógica de Negocio</p>
+                <p class="card_desc">Abuso del flujo previsto de una aplicación para conseguir comportamientos no deseados en el sistema</p>
+                <p class="card_contador">Explotadas en entornos reales: 0 🎯</p>
+                <a href="apuntes/business.html" class="btn_leer">Ver apuntes</a>
+            </article>
+
+            <article class="card_vulnerabilidad">
+                <div class="card_header">
+                    <h3>HTTP Host Header Attacks</h3>
+                    <div style="display: inline-flex; gap: 8px;">
+                        <span class="badge_severidad p4">P4</span>
+                        <span class="badge_severidad p3">P3</span>
+                        <span class="badge_severidad p2">P2</span>
+                        <span class="badge_severidad p1">P1</span>
+                    </div>
+                </div>
+                <p class="card_categoria">Categoría: Configuración del Servidor</p>
+                <p class="card_desc">Manipulación de la cabecera HTTP Host para engañar a la aplicación</p>
+                <p class="card_contador">Explotadas en entornos reales: 0 🎯</p>
+                <a href="apuntes/host_header.html" class="btn_leer">Ver apuntes</a>
+            </article>
+
+            <article class="card_vulnerabilidad">
+                <div class="card_header">
+                    <h3>OAuth Authentication Vulnerabilities</h3>
+                    <div style="display: inline-flex; gap: 8px;">
+                        <span class="badge_severidad p4">P4</span>
+                        <span class="badge_severidad p3">P3</span>
+                        <span class="badge_severidad p2">P2</span>
+                        <span class="badge_severidad p1">P1</span>
+                    </div>
+                </div>
+                <p class="card_categoria">Categoría: Lado del Servidor</p>
+                <p class="card_desc">Implementación defectuosa del protocolo OAuth que permite a un atacante robar tokens de autorización, evadir validaciones y tomar el control completo de la cuenta de otro usuario</p>
+                <p class="card_contador">Explotadas en entornos reales: 0 🎯</p>
+                <a href="apuntes/oauth.html" class="btn_leer">Ver apuntes</a>
+            </article>
+
+            <article class="card_vulnerabilidad">
+                <div class="card_header">
+                    <h3>File Upload Vulnerabilities</h3>
+                    <div style="display: inline-flex; gap: 8px;">
+                        <span class="badge_severidad p4">P4</span>
+                        <span class="badge_severidad p3">P3</span>
+                        <span class="badge_severidad p2">P2</span>
+                        <span class="badge_severidad p1">P1</span>
+                    </div>
+                </div>
+                <p class="card_categoria">Categoría: Lado del Servidor</p>
+                <p class="card_desc">Ocurre cuando una aplicación web permite a los usuarios cargar archivos sin aplicar las validaciones adecuadas</p>
+                <p class="card_contador">Explotadas en entornos reales: 0 🎯</p>
+                <a href="apuntes/file_vul.html" class="btn_leer">Ver apuntes</a>
+            </article>
+
+            <article class="card_vulnerabilidad">
+                <div class="card_header">
+                    <h3>JSON Web Token (JWT) Vulnerabilities</h3>
+                    <div style="display: inline-flex; gap: 8px;">
+                        <span class="badge_severidad p4">P4</span>
+                        <span class="badge_severidad p3">P3</span>
+                        <span class="badge_severidad p2">P2</span>
+                        <span class="badge_severidad p1">P1</span>
+                    </div>
+                </div>
+                <p class="card_categoria">Categoría: Autenticación / Criptografía</p>
+                <p class="card_desc">Manipulación de la estructura o firma de los tokens JWT para falsificar sesiones y escalar privilegios</p>
+                <p class="card_contador">Explotadas en entornos reales: 0 🎯</p>
+                <a href="apuntes/jwt.html" class="btn_leer">Ver apuntes</a>
+            </article>
+
+            <article class="card_vulnerabilidad">
+                <div class="card_header">
+                    <h3>Prototype Pollution</h3>
+                    <div style="display: inline-flex; gap: 8px;">
+                        <span class="badge_severidad p4">P4</span>
+                        <span class="badge_severidad p3">P3</span>
+                        <span class="badge_severidad p2">P2</span>
+                        <span class="badge_severidad p1">P1</span>
+                    </div>
+                </div>
+                <p class="card_categoria">Categoría: Lado del Cliente / Servidor (JS)</p>
+                <p class="card_desc">Inyección de propiedades maliciosas en el prototipo global de los objetos de JavaScript</p>
+                <p class="card_contador">Explotadas en entornos reales: 0 🎯</p>
+                <a href="apuntes/prototype_pollution.html" class="btn_leer">Ver apuntes</a>
+            </article>
+
+            <article class="card_vulnerabilidad">
+                <div class="card_header">
+                    <h3>GraphQL API Vulnerabilities</h3>
+                    <div style="display: inline-flex; gap: 8px;">
+                        <span class="badge_severidad p5">P5</span>
+                        <span class="badge_severidad p4">P4</span>
+                        <span class="badge_severidad p3">P3</span>
+                        <span class="badge_severidad p2">P2</span>
+                        <span class="badge_severidad p1">P1</span>
+                    </div>
+                </div>
+                <p class="card_categoria">Categoría: Lógica de Negocio / API</p>
+                <p class="card_desc">Exposición de esquemas (Introspection), consultas anidadas masivas o fallos de autorización (IDOR) en endpoints de GraphQL</p>
+                <p class="card_contador">Explotadas en entornos reales: 0 🎯</p>
+                <a href="apuntes/graphql.html" class="btn_leer">Ver apuntes</a>
+            </article>
+
+            <article class="card_vulnerabilidad">
+                <div class="card_header">
+                    <h3>Race Conditions</h3>
+                    <div style="display: inline-flex; gap: 8px;">
+                        <span class="badge_severidad p4">P4</span>
+                        <span class="badge_severidad p3">P3</span>
+                        <span class="badge_severidad p2">P2</span>
+                        <span class="badge_severidad p1">P1</span>
+                    </div>
+                </div>
+                <p class="card_categoria">Categoría: Lógica de Negocio / Concurrencia</p>
+                <p class="card_desc">Ocurre cuando uno o más hilos intentan acceder a un recurso compartido al mismo tiempo, permitiendo evadir validaciones de estado</p>
+                <p class="card_contador">Explotadas en entornos reales: 0 🎯</p>
+                <a href="apuntes/race.html" class="btn_leer">Ver apuntes</a>
+            </article>
+
+            <article class="card_vulnerabilidad">
+                <div class="card_header">
+                    <h3>NoSQL Injection</h3>
+                    <div style="display: inline-flex; gap: 8px;">
+                        <span class="badge_severidad p4">P4</span>
+                        <span class="badge_severidad p3">P3</span>
+                        <span class="badge_severidad p2">P2</span>
+                        <span class="badge_severidad p1">P1</span>
+                    </div>
+                </div>
+                <p class="card_categoria">Categoría: Lado del Servidor / Base de Datos</p>
+                <p class="card_desc">Permite alterar y manipular las consultas que una aplicación envía a su base de datos no relacional</p>
+                <p class="card_contador">Explotadas en entornos reales: 0 🎯</p>
+                <a href="apuntes/nosqli.html" class="btn_leer">Ver apuntes</a>
+            </article>
+
+            <article class="card_vulnerabilidad">
+                <div class="card_header">
+                    <h3>Api Testing</h3>
+                    <div style="display: inline-flex; gap: 8px;">
+                        <span class="badge_severidad p5">P5</span>
+                        <span class="badge_severidad p4">P4</span>
+                        <span class="badge_severidad p3">P3</span>
+                        <span class="badge_severidad p2">P2</span>
+                        <span class="badge_severidad p1">P1</span>
+                    </div>
+                </div>
+                <p class="card_categoria">Categoría: Metodología / API</p>
+                <p class="card_desc">Enumeración y explotación de endpoints</p>
+                <p class="card_contador">Explotadas en entornos reales: 0 🎯</p>
+                <a href="apuntes/api_testing.html" class="btn_leer">Ver apuntes</a>
+            </article>
+
+            <article class="card_vulnerabilidad">
+                <div class="card_header">
+                    <h3>Web LLM Attacks</h3>
+                    <div style="display: inline-flex; gap: 8px;">
+                        <span class="badge_severidad p4">P4</span>
+                        <span class="badge_severidad p3">P3</span>
+                        <span class="badge_severidad p2">P2</span>
+                        <span class="badge_severidad p1">P1</span>
+                    </div>
+                </div>
+                <p class="card_categoria">Categoría: Inteligencia Artificial / Lógica</p>
+                <p class="card_desc">Aprovechamiento de modelos de lenguaje integrados para acciones ilícitas mediante inyecciones en los prompts</p>
+                <p class="card_contador">Explotadas en entornos reales: 0 🎯</p>
+                <a href="apuntes/llm.html" class="btn_leer">Ver apuntes</a>
+            </article>
+
+            <article class="card_vulnerabilidad">
+                <div class="card_header">
+                    <h3>Web Cache Deception</h3>
+                    <div style="display: inline-flex; gap: 8px;">
+                        <span class="badge_severidad p4">P4</span>
+                        <span class="badge_severidad p3">P3</span>
+                        <span class="badge_severidad p2">P2</span>
+                        <span class="badge_severidad p1">P1</span>
+                    </div>
+                </div>
+                <p class="card_categoria">Categoría: Lado del Servidor / Infraestructura</p>
+                <p class="card_desc">Engaño al servidor de caché para que almacene y exponga páginas dinámicas con información privada</p>
+                <p class="card_contador">Explotadas en entornos reales: 0 🎯</p>
+                <a href="apuntes/cache_dec.html" class="btn_leer">Ver apuntes</a>
+            </article>
+        </section>
+    </main>
+    <footer class="footer_leyenda">
+        <div class="contenedor_leyenda">
+            <h4>¿Cómo leer las secciones?</h4>
+            <ul class="leyenda_lista">
+                <li><strong>Severidad (Badge):</strong> Basada en el VRT de Bugcrowd, indica la gravedad de la vulnerabilidad siendo P1 lo más grave. En las que hay varias depende del contexto y el alcance</li>
+                <li><strong>Categoría:</strong> Indica el vector de ataque principal</li>
+                <li><strong>Descripción:</strong> Breve descripción de la vulnerabilidad</li>
+                <li><strong>Contador:</strong> Número de vulnerabilidades que he encontrado actualmente en un entorno real</li>
+                <li><strong>Ver apuntes:</strong> Link directo a los apuntes de dicha vulnerabilidad</li>
+                <li><strong>Nota informativa:</strong> Toda la información de esta página web son apuntes personales. Por lo que no puedo asegurar que sea una fuente fiable de información. Mi objetivo es compartir mi experiencia y conocimiento como persona autodidacta para facilitar el inicio del aprendizaje de otras personas que estén comenzando su aprendizaje</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
