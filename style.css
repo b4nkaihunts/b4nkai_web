@@ -1,8 +1,9 @@
-:root {
+:root{
     --color_primario: #7ab6be;
-    --color_fondo: #31312d;
+    --color_fondo: #1a1a19;
     --color_fondo_imagen: 46,50,94;
     --color_texto: #f8fafc;
+    --color_buscador: #31312d;
 
     --color_p1: #ff2418;
     --color_p2: #FF803B;
@@ -16,16 +17,21 @@
     box-sizing: border-box;
 }
 
-body {
+body{
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
     color: var(--color_primario);
     line-height: 1.5;
+    background-color: var(--color_fondo);
 }
 
-a {
+a{
     color: var(--color_primario);
     font-weight: 400;
+}
+
+.home{
+    margin: 7%;
 }
 
 /*index*/
@@ -60,6 +66,24 @@ a {
 }*/
 
 /*vulnerabilidades*/
+.buscador{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 7%;
+    margin-top: 3%;
+}
+
+#buscador{
+    width: 20%;
+    padding: 0.7%;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    border: 30px;
+    outline: none;
+    background-color: var(--color_buscador);
+    color: var(--color_primario);
+}
+
 .card_vulnerabilidad{
     margin: 7%;
 }
@@ -84,6 +108,10 @@ a {
     color: var(--color_p5);
 }
 
+.footer_leyenda{
+    margin: 3%;
+}
+
 /*b4nkai*/
 .descripcion{
     margin: 5%;
@@ -93,3 +121,4 @@ a {
 .grid_lenguajes{
     margin: 7%;
 }
+
