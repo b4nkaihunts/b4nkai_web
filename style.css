@@ -48,6 +48,7 @@ a {
     margin: 10%;
 }
 
+
 /*b4kai*/
 /*.fondo_b4nkai{
     background-image: linear-gradient(rgba(var(--color_fondo_imagen),0.95), rgba(var(--color_fondo_imagen),0.95)), url('img/ShinjiHirako.jpeg');
@@ -84,4 +85,11 @@ a {
 }
 
 /*b4nkai*/
+.descripcion{
+    margin: 5%;
+}
 
+/*lenguajes*/
+.grid_lenguajes{
+    margin: 7%;
+}
